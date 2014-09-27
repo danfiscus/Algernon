@@ -8,6 +8,8 @@ capabilities such as simplifying square roots and exponents.
 Contributers
 ============
 
-C. King
-J. Bender 
+C. King,
+
+J. Bender,
+
 D. Fiscus
