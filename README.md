@@ -11,3 +11,7 @@ Contributors
 * C. King
 * J. Bender
 * D. Fiscus
+
+IRC
+===
+[#algernon on Freenode](http://webchat.freenode.net/?channels=%23algernon&uio=d4)
