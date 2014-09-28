@@ -14,4 +14,4 @@ Contributors
 
 IRC
 ===
-[#algernon on Freenode](http://webchat.freenode.net/?channels=%23algernon&uio=d4)
+[#algernonprogram on Chatabout](http://chatabout.net:9090/?channels=algernonprogram&uio=OT10cnVlJjExPTM2OQ6d)
