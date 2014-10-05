@@ -7,6 +7,7 @@ using namespace std;
 int main() {
 	lexer lex1("hello");
 	lex1.make_array();
-	cout << lex1.return_expression() << endl;
+	parser parse1;
+	parse1.print_string();
 	return 0;
 }
