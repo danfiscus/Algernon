@@ -5,7 +5,8 @@
 
 using namespace std;
 
-string tokens[100]; /*max size is 100*/
+const int array_len = 100;
+string tokens[array_len]; /*max size is 100*/
 
 class lexer {
 	int length;
@@ -28,7 +29,7 @@ class parser {
 };
 
 void parser::print_string(){
-	for (int i=0;i<100;i++){
+	for (int i=0;i<array_len;i++){
 		cout << tokens[i] << endl;
 	}
 };
