@@ -30,7 +30,28 @@ void lexer::make_array() {
 
 void lexer::make_tokens() {
 	for (int i=0;i<length;i++){
-		tokens[i].type="string";
+		string cur_token = characters[i];
+		if (cur_token == "("){
+			tokens[i].type="par";
+		}
+		else if (cur_token == "+" || cur_token == "-" || cur_token == "*" || cur_token == "/"){
+			tokens[i].type="op";
+		}
+		else if (cur_token == "0" || 
+		cur_token == "1" || 
+		cur_token == "2" || 
+		cur_token == "3" || 
+		cur_token == "4" || 
+		cur_token == "5" || 
+		cur_token == "6" || 
+		cur_token == "7" || 
+		cur_token == "8" || 
+		cur_token == "9"){
+			tokens[i].type="num";
+		}
+		else{
+			tokens[i].type="var";
+		}
 		tokens[i].value=characters[i];
 	};
 };
@@ -44,6 +65,7 @@ class parser {
 void parser::print_string(){
 	for (int i=0;i<array_len;i++){
 		if (tokens[i].value!=""){
+			cout << tokens[i].type << endl;
 			cout << tokens[i].value << endl;
 		}
 	}
